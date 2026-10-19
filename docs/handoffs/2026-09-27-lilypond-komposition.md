@@ -100,16 +100,16 @@ Form (aus dem Material, nicht vorgeplant):
 
 Linke Hand: durchgehende Achtel-Arpeggien, Pedalwechsel pro Harmonie (`sustainOn`/`sustainOff`).
 
-**Quelle:** `scores/between-floors.ly`  
+**Quelle:** `scores/between-floors/between-floors.ly`  
 **Erwartete Artefakte** (beim Test erzeugt; ggf. erneut rendern):
 
 | Datei | Inhalt |
 |-------|--------|
-| `scores/between-floors.ly` | LilyPond-Quelle (bleibt) |
-| `scores/between-floors.pdf` | Notensatz, 1 Seite |
-| `scores/preview.png` | Vorschau |
-| `scores/between-floors.midi` | Symbolische Zwischenstufe |
-| `scores/between-floors.mp3` | Klavier-Audio, −16 LUFS, Peak −1.5 dB, Suno-tauglich |
+| `scores/between-floors/between-floors.ly` | LilyPond-Quelle (bleibt) |
+| `scores/between-floors/between-floors.pdf` | Notensatz, 1 Seite |
+| `scores/between-floors/preview.png` | Vorschau |
+| `scores/between-floors/between-floors.midi` | Symbolische Zwischenstufe |
+| `scores/between-floors/between-floors.mp3` | Klavier-Audio, −16 LUFS, Peak −1.5 dB, Suno-tauglich |
 
 Kompilat: LilyPond **2.26.0**, keine Warnungen.
 
@@ -126,7 +126,7 @@ Beim Test neu auf dem Rechner:
 | MuseScore General SF3 | `~/.local/share/soundfonts/MuseScore_General.sf3` | Klavier-Soundfont (~38 MB, osuosl.org) |
 | ffmpeg | bereits unter `~/.local/bin/ffmpeg` | WAV → MP3, Loudnorm |
 
-Render-Befehle (aus `scores/`):
+Render-Befehle (aus `scores/between-floors/` oder via `./scripts/render-score.sh between-floors`):
 
 ```bash
 lilypond between-floors.ly
@@ -168,6 +168,6 @@ WAV nach Normalisierung gelöscht. `preview.midi` (Duplikat) ebenfalls entfernt.
 | Thema | Ort |
 |-------|-----|
 | Handoff | `docs/handoffs/2026-09-27-lilypond-komposition.md` |
-| Partitur | `scores/between-floors.ly` |
+| Partitur | `scores/between-floors/between-floors.ly` |
 | Referenz | `~/Downloads/Stairwell Light — Score : Sound.pdf` |
 | Soundfont | `~/.local/share/soundfonts/MuseScore_General.sf3` |
