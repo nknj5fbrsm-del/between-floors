@@ -1,7 +1,5 @@
 # Between Floors
 
-
-Teil von [Lilypond Komposition](../) (Dachordner).
 Album-Dokumentation: Score (LilyPond) → Sound (Suno) → Bigband.
 
 **Online:** nach dem Deploy unter  
